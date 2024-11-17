@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navigationBarMenu {
+    background-color: green;
+}
+
+.navigationBarMenu ul {
+    display:inline-flex;
+    list-style: none;
+}
+
+.navigationBarMenu ul li {
+    width: 120px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.navigationBarMenu ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.navigationBarMenu ul li:hover {
+    background-color: aqua;
+}
+
+.productsDropdown {
+    display: none;
+}
+
+.navigationBarMenu ul li:hover .productsDropdown {
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 15px;
+    margin-left: -10px;
+    text-align: left;
+
+}
+
+.navigationBarMenu ul li:hover .productsDropdown ul {
+    display: block;
+}
+
+.fandropdown {
+    display: none;
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc)
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+  /* .row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other 
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  } */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+a {
+    color: black;
+    text-decoration: none;
+}
